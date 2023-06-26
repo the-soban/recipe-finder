@@ -226,6 +226,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 20px;
 }
 
 .modal-heading{
@@ -256,6 +257,7 @@
 .instructions{
     text-align: start;
     word-break: normal;
+    line-height: 1.8rem;
 }
 
 .modal-image{
@@ -269,7 +271,7 @@
     color: transparent;
 }
 
-.modal-link{
+.modal-video{
     color: var(--secondary-button);
     background-color: var(--background);
     text-decoration: none;
@@ -279,6 +281,17 @@
     transition: all 0.3s linear;
 }
 
-.modal-link:hover{
+.modal-video:hover{
     background-color: #eeeeee;
+}
+
+.modal-source{
+    color: var(--background);
+    text-decoration: none;
+    border-bottom: 0px solid var(--background);
+    margin: 1rem 0 0;
+}
+
+.modal-source:hover{
+    border-bottom: 2px solid var(--background);
 }
