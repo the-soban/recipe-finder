@@ -107,7 +107,16 @@
     color: var(--text);
     font-size: 1.8rem;
     font-weight: 600;
-    margin: 1rem 0;
+    margin: 1rem auto;
+}
+
+.result-msg{
+    display: block;
+    color: var(--text);
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .meal-result{
@@ -153,6 +162,10 @@
     font-size: 1.4rem;
     color: var(--text);
     margin: 0 0 1.4rem;
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .meal-btn{
