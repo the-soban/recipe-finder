@@ -15,6 +15,13 @@ modalCloseBtn.addEventListener('click', () => {
     modalContent.parentElement.style.display = 'none';
 });
 
+searchField.addEventListener('keypress', function(e){
+    if(e.key === "Enter"){
+        e.preventDefault();
+        searchBtn.dispatchEvent(new Event('click'));
+    }
+});
+
 function getMeals(){
     let searchInput = searchField.value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInput}`)
@@ -67,7 +74,7 @@ function openModal(meal){
             <h3 class="modal-heading">${meal.strMeal}</h3>
             <p class="modal-category">Category: ${meal.strCategory}</p>
             <div class="modal-instructions">
-                <h4 class="instructions-heading">Instructions</h4>
+                <h4 class="instructions-heading">Instructions:</h4>
                 <p class="instructions">${meal.strInstructions}</p>
             </div>
             <div class="modal-image-box">
