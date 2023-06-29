@@ -47,7 +47,7 @@ function getMeals(){
             mealResults.classList.remove('result-msg');
 
         } else {
-            htmlData = `Sorry! We Couldn't find any meals with that ingredient.<br>Please try again</h2>`;
+            htmlData = `Sorry! We Couldn't find any meals with that ingredient.<br>Please try again!</h2>`;
             mealResults.classList.add('result-msg');
             mealResults.classList.remove('meal-result');
         }

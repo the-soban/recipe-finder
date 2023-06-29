@@ -130,9 +130,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.meal-item{
     border: 2px solid rgba(22, 111, 80, 0.0);
     border-radius: 16px;
     overflow: hidden;
@@ -294,4 +291,169 @@
 
 .modal-source:hover{
     border-bottom: 2px solid var(--background);
+}
+
+
+@media screen and (min-width: 476px) and (max-width: 760px){
+
+    .meal-heading{
+        font-size: 1.4rem;
+    }
+
+    .meal-quote{
+        font-size: 0.8rem;
+    }
+
+    .meal-search-field{
+        font-size: 1.2rem;
+    }
+
+    .meal-search-field::placeholder{
+        letter-spacing: -1px;
+    }
+
+    .result-heading{
+        font-size: 1.2rem;
+    }
+
+    .result-msg{
+        font-size: 1rem;
+        padding: 0 64px;
+    }
+
+    .meal-result{
+        gap: 2rem;
+    }
+
+    .meal-item{
+        border-radius: 12px;
+    }
+
+    .meal-image{
+        padding: 0.6rem 0.6rem 0.4rem;
+        border-radius: 20px;
+    }
+
+    .meal-text-box{
+        margin: 0 0 1.4rem;
+    }
+
+    .meal-name{
+        font-size: 0.9rem;
+        max-width: 160px;
+        margin: 0 0 1rem;
+        line-break: strict;
+    }
+
+    .meal-btn{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 8px;
+    }
+
+    .meal-modal{
+        margin: 2rem auto 0;
+    }
+
+    .modal-close-btn{
+        width: 28px;
+        height: 28px;
+    }
+
+    .modal-heading{
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .modal-category{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.6rem;
+        border-radius: 4px;
+    }
+
+    .modal-instructions{
+        margin: 16px auto;
+    }
+
+    .instructions-heading{
+        
+    }
+
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 475px){
+
+    .meal-heading{
+        font-size: 1rem;
+    }
+
+    .meal-quote{
+        font-size: 0.6rem;
+        margin: 0 24px;
+    }
+
+    .meal-search-box{
+        margin: 0.6rem 1rem;
+    }
+
+    .meal-search-field{
+        font-size: 0.8rem;
+        width: 80%;
+    }
+
+    .meal-search-field::placeholder{
+        letter-spacing: -1px;
+        word-spacing: 1px;
+    }
+
+    .meal-search-btn{
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+    }
+
+    .result-heading{
+        font-size: 1.2rem;
+    }
+
+    .result-msg{
+        font-size: 1rem;
+        padding: 0 64px;
+    }
+
+    .meal-result{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .meal-result{
+        gap: 2rem;
+    }
+
+    .meal-item{
+        border-radius: 12px;
+    }
+
+    .meal-image{
+        padding: 0.6rem 0.6rem 0.4rem;
+        border-radius: 20px;
+    }
+
+    .meal-text-box{
+        margin: 0 0 1.4rem;
+    }
+
+    .meal-name{
+        font-size: 0.9rem;
+        max-width: 160px;
+        margin: 0 0 1rem;
+        line-break: strict;
+    }
+
+    .meal-btn{
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+        border-radius: 6px;
+    }
+
 }
