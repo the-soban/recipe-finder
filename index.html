@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Meal Finder</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Search - Meal Finder</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <div class="main-box">
+        <div class="meal-box">
+            <div class="meal-header">
+                <h1 class="meal-heading">Find Meals for yourself</h1>
+                <blockquote class="meal-quote">“Food is symbolic of love when words are inadequate.”
+                    <cite>– Alan D. Wolfelt</cite>
+                </blockquote>
 
-    <a href="./search.html">Go to search page</a>
+                <div class="meal-search-box">
+                    <input class="meal-search-field" type="text" placeholder="Search by an ingredient"></input>
+                    <svg class="meal-search-btn" id="btn" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M792-120.667 532.667-380q-30 25.333-69.64 39.666Q423.388-326 378.667-326q-108.441 0-183.554-75.167Q120-476.333 120-583.333T195.167-765.5q75.166-75.167 182.5-75.167 107.333 0 182.166 75.167 74.834 75.167 74.834 182.267 0 43.233-14 82.9-14 39.666-40.667 73l260 258.667-48 47.999ZM378-392.666q79.167 0 134.583-55.834Q568-504.333 568-583.333q0-79.001-55.417-134.834Q457.167-774 378-774q-79.722 0-135.528 55.833t-55.806 134.834q0 79 55.806 134.833Q298.278-392.666 378-392.666Z"/></svg>
+                    
+                </div>
+            </div>
+
+            <div class="meal-result-box">
+                <h2 class="result-heading">Search Results:</h2>
+                
+                <div class="meal-result">
+
+                </div>
+            </div>
+
+            <div class="meal-modal">
+                <svg class="modal-close-btn" xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="m251.333-204.667-46.666-46.666L433.334-480 204.667-708.667l46.666-46.666L480-526.666l228.667-228.667 46.666 46.666L526.666-480l228.667 228.667-46.666 46.666L480-433.334 251.333-204.667Z"/></svg>
+                <div class="modal-content">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
